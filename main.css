@@ -6,6 +6,14 @@
     font-family: 'Open sans', sans-serif;
     scroll-behavior: smooth;
 }
+
+/* mobile menu */
+
+#mobileMenuBtn{
+    color: #fff;
+}
+
+
 /* main container */
 
 #mainContainer{
@@ -644,11 +652,67 @@
         display: none;
     }
 
+    #mobileMenuBtn{
+        position: relative;
+        display: block;
+    }
+
+    #mobileMenu{
+        background: rgb(207,90,208);
+        background: linear-gradient(90deg, rgba(207,90,208,0.3796526054590571) 0%, rgba(221,136,221,1) 0%, rgba(255,255,255,1) 100%);
+        display: flex;
+        flex-direction: column;
+        z-index: 10;
+        top: 25%;
+        position: absolute;
+        width: 50%;
+        height: 100vh;
+        transform: translate3d(0px, 0, 0);
+        transition: all .5s ease-in-out;
+        -webkit-box-shadow: 16px 1px 9px 11px rgba(0,0,0,0.75);
+        -moz-box-shadow: 16px 1px 9px 11px rgba(0,0,0,0.75);
+        box-shadow: 16px 1px 9px 11px rgba(0,0,0,0.75);
+        border-radius: 5%;
+        transition: all .5s ease-in-out;
+    }
+
+    #mobileMenu.active{
+        display: flex;
+        flex-direction: column;
+        transform: translate3d(-650px, 0, 0);
+        background: rgb(207,90,208);
+        background: linear-gradient(90deg, rgba(207,90,208,0.3796526054590571) 0%, rgba(221,136,221,1) 0%, rgba(255,255,255,1) 100%);
+        display: flex;
+        flex-direction: column;
+        z-index: 10;
+        top: 25%;
+        position: absolute;
+        width: 50%;
+        height: 100vh;
+        transform: translate3d(0px, 0, 0);
+        transition: all .5s ease-in-out;
+        -webkit-box-shadow: 16px 1px 9px 11px rgba(0,0,0,0.75);
+        -moz-box-shadow: 16px 1px 9px 11px rgba(0,0,0,0.75);
+        box-shadow: 16px 1px 9px 11px rgba(0,0,0,0.75);
+        border-radius: 5%;
+        transition: all .5s ease-in-out;
+    }
+
+    #mobileMenu.active a{
+        text-decoration: none;
+        color: #fff;
+        padding: 15px;
+        font-size: 20px;
+        transition: all .4s ease-in-out;
+    }
+
     .userContainer{
         display: none;
     }
 
     .intro{
+        position: absolute;
+        top: 60%;
         width: 50%;
         text-align: center;
         margin-left: 90px;
@@ -691,6 +755,14 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+
+    #mobileMenuBtn{
+        display: none;
+    }
+
+    #mobileMenu{
+        display: none;
+    }
 
     #navbar{
         display: block;
@@ -754,6 +826,14 @@
     .midContainerPics .image1 {
         width: 500px;
         height: 300px;
+    }
+
+    #mobileMenuBtn{
+        display: none;
+    }
+
+    #mobileMenu{
+        display: none;
     }
 
     .midContainerPics .image2 {
