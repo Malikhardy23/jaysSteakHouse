@@ -1,0 +1,794 @@
+
+*{
+    padding: 0;
+    box-sizing: 0;
+    margin: 0;
+    font-family: 'Open sans', sans-serif;
+    scroll-behavior: smooth;
+}
+/* main container */
+
+#mainContainer{
+    width: 100%;
+    height: 100vh;
+    background: url('https://img5.goodfon.com/wallpaper/nbig/1/20/steik-miaso-ovoshchi-ogon-gril.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+/* intro */
+
+.intro{
+    position: relative;
+    text-align: center;
+    top: 40%;
+    left: 15%;
+    width: 70%;
+    color: #fff;
+    padding: 30px;
+    font-size: 30px;
+    background-color: rgba(75, 75, 75, 0.418);
+}
+
+.intro button{
+    padding: 10px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+    margin: 25px;
+    font-size: 20px;
+    border-radius: 10%;
+}
+
+.intro button:hover{
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+
+
+/* logo container */
+
+.logoContainer{
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    align-content: center;
+}
+
+ .logoContainer .fas{
+    display: flex;
+    align-content: center;
+    margin: 5px;
+} 
+
+/* top section */
+
+#topSection{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    padding: 20px;
+    font-size: 25px;
+}
+
+/* navbar */
+
+#navbar a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+}
+
+/* user container */
+
+.userContainer{
+    color: #fff;
+}
+
+/* midContainer */ 
+
+#midContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(43, 43, 43);
+    cursor: pointer;
+    color: #fff;
+}
+
+#midContainer .infoSection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px;
+}
+
+.infoSection p{
+    line-height: 30px;
+}
+
+.infoSection h4, h2{
+    padding: 20px;
+}
+
+#midContainer .midContainerPics{
+    display: flex;
+    flex-direction: column;
+}
+
+.midContainerPics .image1{
+    background: url('http://duruthemes.com/demo/html/redboa/onepage-dark/assets/img/about1.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+    align-items: baseline;
+    margin: 20px;
+}
+
+.midContainerPics .image2{
+    background: url('http://duruthemes.com/demo/html/redboa/onepage-dark/assets/img/about2.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+}
+
+/* menu container */
+
+.menuContainer{
+    width: 100%;
+    height: 85vh;
+    /* background: url('https://www.lakegogebicarea.com/wp-content/uploads/2020/05/steak-on-grill.jpg'); */
+    background-color: rgb(43, 43, 43);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+/* menu title */
+
+.menuTitle{
+    text-align: center;
+    letter-spacing: 2px;
+    color: rgb(226, 0, 0);
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* menu */
+
+#menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#menu .main{
+    margin: 15px;
+}
+
+
+/* menu options */
+
+#menuOptions{
+    display: flex;
+}
+
+#menuOptions button{
+    margin: 10px 10px;
+    font-size: 25px;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+#menuOptions button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.wineSection,
+.breakfastSection,
+.startersSection,
+.steakSection{
+    padding: 10px;
+    font-size: 25px;
+}
+
+/* gallery */
+
+#gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 100%;
+    background-color: rgb(43, 43, 43);
+    cursor: pointer;
+    color: #fff;
+}
+
+#gallery a{
+    text-decoration: none;
+    padding: 20px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.galleryTitle{
+    margin: 30px;
+}
+
+#galleryPhotos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+    cursor: pointer;
+    padding: 50px;
+}
+
+#galleryPhotos .main{
+    margin: 10px;
+    cursor: pointer;
+}
+
+.main{
+    cursor: pointer;
+}
+
+.mainImage1{
+    background: url('https://wallpaperaccess.com/full/1462833.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 200px;
+}
+
+.mainImage2{
+    background: url('https://media.eggs.ca/assets/RecipePhotos/_resampled/FillWyIxMjgwIiwiNzIwIl0/Fluffy-Pancakes-New-CMS.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 200px;
+}
+
+.mainImage3{
+    background: url('https://cdn11.bigcommerce.com/s-9hu30/images/stencil/2048x2048/products/164/2417/moet_and_chandon_brut_imperial__66768.1585336474.jpg?c=2');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 200px;
+}
+
+.mainImage4{
+    background: url('https://img5.goodfon.com/wallpaper/nbig/1/3e/gamburger-burger-mcdonald-s-perets.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 200px;
+}
+
+.mainImage5{
+    background: url('https://i2.wp.com/buythiscookthat.com/wp-content/uploads/2016/04/BBQ-Chicken-Wings-9.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 200px;
+}
+
+.mainImage6{
+    background: url('https://tastesbetterfromscratch.com/wp-content/uploads/2016/02/Pulled-Pork-Nachos-4.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 200px;
+}
+
+.mainImage7{
+    background: url('https://qvc.scene7.com/is/image/QVC/m/92/m116592.001?$aempdzoom$');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 200px;
+}
+
+.mainImage8{
+    background: url('https://dydza6t6xitx6.cloudfront.net/ci-barefoot-rose-9df9d6432acc2676.png');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 200px;
+}
+
+.mainImage9{
+    background: url('http://duruthemes.com/demo/html/redboa/onepage-dark/assets/img/gallery/1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 200px;
+}
+
+.mainImage10{
+    background: url('http://duruthemes.com/demo/html/redboa/onepage-dark/assets/img/gallery/3.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 200px;
+}
+
+.mainImage11{
+    background: url('http://duruthemes.com/demo/html/redboa/onepage-dark/assets/img/gallery/5.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 200px;
+}
+
+.mainImage12{
+    background: url('http://duruthemes.com/demo/html/redboa/onepage-dark/assets/img/gallery/2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 200px;
+}
+
+.mainImage13{
+    background: url('http://duruthemes.com/demo/html/redboa/onepage-dark/assets/img/gallery/4.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 200px;
+}
+
+.mainImage14{
+    background: url('http://duruthemes.com/demo/html/redboa/onepage-dark/assets/img/gallery/6.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 200px;
+}
+
+/* footer */
+
+#footer{
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 50px;
+    font-size: 20px;
+}
+
+/* contact info */
+
+.contactTitleContainer{
+    text-align: center;
+}
+
+.contactTitleContainer p{
+    color: rgb(182, 44, 44);
+    text-align: center;
+}
+
+.phoneInfo p:first-of-type{
+    color: rgb(182, 44, 44);
+}
+
+#contactInfo{
+    display: flex;
+    padding: 50px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+}
+
+/* social media container */
+
+.socialmediaContainer{
+   /* display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center; */
+    text-align: center;
+    padding: 10px;
+}
+
+.socialmediaContainer .fab{
+    padding: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    color: rgb(182, 44, 44);
+}
+
+.socialmediaContainer .rights{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/* CSS MEDIA QUERIES */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    #mainContainer{
+        width: 600px;
+    }
+
+    #navbar{
+        display: none;
+    }
+
+    .userContainer{
+        display: none;
+    }
+
+    #contactInfo{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro {
+        width: 50%;
+        text-align: center;
+        margin-left: 45px;
+        font-size: 25px;
+        margin-top: -190px;
+    }
+
+    #midContainer{
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #midContainer .infoSection{
+        width: 50%;
+    }
+
+    .midContainerPics {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .infoSection p{
+        width: 350px;
+    }
+
+    #menuSection{
+        height: 175vh;
+        width: 600px;
+    }
+
+    #menu{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+    }
+
+    #menuOptions{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+
+    #menu .main {
+        width: 170px;
+    }
+
+    #gallery{
+        width: 600px;
+        height: 100vh;
+    }
+
+    .galleryOptionsContainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+
+    #galleryPhotos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #galleryPhotos .main {
+        width: 145px;
+        height: 145px;
+    }
+
+    #footer{
+        width: 500px;
+        background-color: rgb(0, 0, 0);
+        color: #fff;
+        padding: 50px;
+        font-size: 20px;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    body{
+        width: 100%;
+    }
+
+    #mainContainer{
+        width: 100%;
+    }
+
+    #navbar{
+        display: none;
+    }
+
+    .userContainer{
+        display: none;
+    }
+
+    .intro {
+        width: 50%;
+        text-align: center;
+        margin-left: 45px;
+        font-size: 15px;
+        margin-top: -21%;
+    }
+
+    #midContainer{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    #midContainer .midContainerPics {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .midContainerPics .image1{
+        width: 260px;
+        height: 150px;
+    }
+
+    .midContainerPics .image2{
+        width: 260px;
+        height: 150px;
+    }
+
+    .infoSection p{
+        width: 80%;
+        margin: 25px;
+    }
+
+    #contactInfo{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #menuSection{
+        height: 90vh;
+    }
+
+    #menuOptions button{
+        font-size: 15px;
+        margin: 10px;
+    }
+
+    #menu{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+    }
+
+    #menuSection{
+        padding-top: 50%;
+        width: 100%;
+        height: 100vh;
+        font-size: 15px;
+    }
+
+    #menuOptions{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+
+    #gallery{
+        padding-top: 50%;
+        height: 280vh;
+    }
+
+    .galleryOptionsContainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+
+    #galleryPhotos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #menu .main{
+        width: 150px;
+        height: 150px;
+    }
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #navbar{
+        display: none;
+    }
+
+    .userContainer{
+        display: none;
+    }
+
+    .intro{
+        width: 50%;
+        text-align: center;
+        margin-left: 90px;
+        height: 250px;
+        font-size: 20px;
+    }
+
+    #contactInfo{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #menuSection{
+        height: 100vh;
+    }
+
+    #menu{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+    }
+
+    #menu .main{
+        width: 200px;
+        height: 200px;
+    }
+
+    #menuOptions{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+
+    #gallery{
+        height: 265vh;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    #navbar{
+        display: block;
+    }
+
+    .userContainer{
+        display: block;
+    }
+
+    #mainContainer{
+        height: 100vh;
+    }
+
+    .intro{
+        width: 50%;
+        text-align: center;
+        margin-left: 90px;
+        height: 290px;
+        font-size: 25px;
+        margin-top: -14%;
+    }
+
+    #contactInfo{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    #menuSection{
+        height: 200vh;
+        padding-top: 10%;
+    }
+
+    #menu{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: center;
+    }
+
+    #menuOptions{
+        display: flex;
+    }
+
+    #gallery {
+        height: 150vh;
+        padding-top: 0%;
+    }
+
+    #galleryPhotos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    .midContainerPics .image1 {
+        width: 500px;
+        height: 300px;
+    }
+
+    .midContainerPics .image2 {
+        width: 500px;
+        height: 300px;
+    }
+
+    #contactInfo{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+
+    #menuSection{
+        height: 100vh;
+    }
+
+    #menu{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: center;
+    }
+
+    #menuOptions{
+        display: flex;
+    }
+
+    #gallery {
+        height: 80vh;
+        padding-top: 5%;
+    }
+
+    #galleryPhotos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
