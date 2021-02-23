@@ -328,7 +328,7 @@
     width: 200px;
 }
 
-.mainImage9{
+#galleryPhotos .mainImage9{
     background: url('http://duruthemes.com/demo/html/redboa/onepage-dark/assets/img/gallery/1.jpg');
     background-size: cover;
     background-position: center;
