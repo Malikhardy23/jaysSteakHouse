@@ -779,8 +779,8 @@
         width: 50%;
         text-align: center;
         margin-left: 90px;
-        height: 380px;
-        font-size: 25px;
+        height: 260px;
+        font-size: 20px;
         left: 15%;
     }
 
@@ -812,7 +812,7 @@
     }
 
     #gallery{
-        height: 265vh;
+        height: 195vh;
     }
 
 }
@@ -911,8 +911,16 @@
         text-align: center;
     }
 
+    .intro{
+        width: 50%;
+        text-align: center;
+        margin-left: 90px;
+        height: 234px;
+        font-size: 22px;
+        margin-top: 0px;
+    }
     #menuSection{
-        height: 100vh;
+        height: 165vh;
     }
 
     #menu{
@@ -926,13 +934,18 @@
     }
 
     #gallery {
-        height: 80vh;
+        height: 185vh;
         padding-top: 5%;
     }
 
     #galleryPhotos{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #galleryPhotos .main{
+        width: 205px;
+        height: 145px;
     }
 
 }
