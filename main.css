@@ -14,6 +14,7 @@
 }
 
 
+
 /* main container */
 
 #mainContainer{
@@ -39,7 +40,7 @@
     padding: 30px;
     font-size: 30px;
     background-color: rgba(75, 75, 75, 0.418);
-}
+} 
 
 .intro button{
     padding: 10px;
@@ -450,6 +451,41 @@
         display: none;
     }
 
+
+    #mobileMenuBtn{
+        position: relative;
+        display: block;
+    }
+
+    .mobileMenu{
+        background: rgb(43, 43, 43);
+        display: flex;
+        flex-direction: column;
+        z-index: 10;
+        width: 50%;
+        height: 0 auto;
+        transform: translate3d(0px, 0, 0);
+        transition: all .5s ease-in-out;
+        -webkit-box-shadow: 16px 1px 9px 11px rgba(0,0,0,0.75);
+        -moz-box-shadow: 16px 1px 9px 11px rgba(0,0,0,0.75);
+        box-shadow: 16px 1px 9px 11px rgba(0,0,0,0.75);
+        transition: all .5s ease-in-out;
+    }
+
+    .mobileMenu.active{
+        transform: translate3d( -650px, 0px, 0);
+    }
+
+    .mobileMenu a{
+        color: #fff;
+        padding: 15px 0;
+        text-decoration: none;
+        font-size: 25px;
+        margin-top: 20px;
+        transition: all .4s ease-in-out;
+        text-align: center;
+    }
+
     #contactInfo{
         display: flex;
         flex-direction: column;
@@ -457,11 +493,13 @@
     }
 
     .intro {
-        width: 50%;
-        text-align: center;
-        margin-left: 45px;
-        font-size: 25px;
-        margin-top: -190px;
+        position: relative;
+        top: -50%;
+        left: 15%;
+        font-size: 20px;
+        color: #fff;
+        padding: 30px;
+        background-color: rgba(75, 75, 75, 0.418);
     }
 
     #midContainer{
@@ -550,16 +588,54 @@
         display: none;
     }
 
+
+    #mobileMenuBtn{
+        position: relative;
+        display: block;
+    }
+
+    .mobileMenu{
+        background: rgb(43, 43, 43);
+        display: flex;
+        flex-direction: column;
+        z-index: 10;
+        width: 50%;
+        height: 0 auto;
+        transform: translate3d(0px, 0, 0);
+        transition: all .5s ease-in-out;
+        -webkit-box-shadow: 16px 1px 9px 11px rgba(0,0,0,0.75);
+        -moz-box-shadow: 16px 1px 9px 11px rgba(0,0,0,0.75);
+        box-shadow: 16px 1px 9px 11px rgba(0,0,0,0.75);
+        transition: all .5s ease-in-out;
+    }
+
+    .mobileMenu.active{
+        transform: translate3d(-650px, 0px, 0);
+    }
+
+    .mobileMenu a{
+        color: #fff;
+        padding: 15px 0;
+        text-decoration: none;
+        font-size: 25px;
+        margin-top: 20px;
+        transition: all .4s ease-in-out;
+        text-align: center;
+    }
+
     .userContainer{
         display: none;
     }
 
     .intro {
-        width: 50%;
-        text-align: center;
-        margin-left: 45px;
+        position: relative;
+        top: -95%;
+        left: 25%;
         font-size: 15px;
-        margin-top: -21%;
+        color: #fff;
+        padding: 5px;
+        background-color: rgba(75, 75, 75, 0.418);
+        width: 50%;
     }
 
     #midContainer{
@@ -624,7 +700,7 @@
 
     #gallery{
         padding-top: 50%;
-        height: 280vh;
+        height: 210vh;
     }
 
     .galleryOptionsContainer{
@@ -636,6 +712,12 @@
     #galleryPhotos{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        height: 120vh;
+    }
+
+    #galleryPhotos .main{
+        width: 150px;
+        height: 100px;
     }
 
     #menu .main{
@@ -657,67 +739,49 @@
         display: block;
     }
 
-    #mobileMenu{
-        background: rgb(207,90,208);
-        background: linear-gradient(90deg, rgba(207,90,208,0.3796526054590571) 0%, rgba(221,136,221,1) 0%, rgba(255,255,255,1) 100%);
+    .mobileMenu{
+        background: rgb(43, 43, 43);
         display: flex;
         flex-direction: column;
         z-index: 10;
-        top: 25%;
-        position: absolute;
         width: 50%;
-        height: 100vh;
+        height: 0 auto;
         transform: translate3d(0px, 0, 0);
         transition: all .5s ease-in-out;
         -webkit-box-shadow: 16px 1px 9px 11px rgba(0,0,0,0.75);
         -moz-box-shadow: 16px 1px 9px 11px rgba(0,0,0,0.75);
         box-shadow: 16px 1px 9px 11px rgba(0,0,0,0.75);
-        border-radius: 5%;
         transition: all .5s ease-in-out;
     }
 
-    #mobileMenu.active{
-        display: flex;
-        flex-direction: column;
-        transform: translate3d(-650px, 0, 0);
-        background: rgb(207,90,208);
-        background: linear-gradient(90deg, rgba(207,90,208,0.3796526054590571) 0%, rgba(221,136,221,1) 0%, rgba(255,255,255,1) 100%);
-        display: flex;
-        flex-direction: column;
-        z-index: 10;
-        top: 25%;
-        position: absolute;
-        width: 50%;
-        height: 100vh;
-        transform: translate3d(0px, 0, 0);
-        transition: all .5s ease-in-out;
-        -webkit-box-shadow: 16px 1px 9px 11px rgba(0,0,0,0.75);
-        -moz-box-shadow: 16px 1px 9px 11px rgba(0,0,0,0.75);
-        box-shadow: 16px 1px 9px 11px rgba(0,0,0,0.75);
-        border-radius: 5%;
-        transition: all .5s ease-in-out;
+    .mobileMenu.active{
+        transform: translate3d(-650px, 0px, 0);
     }
 
-    #mobileMenu.active a{
-        text-decoration: none;
+
+    .mobileMenu a{
         color: #fff;
-        padding: 15px;
-        font-size: 20px;
+        padding: 15px 0;
+        text-decoration: none;
+        font-size: 25px;
+        margin-top: 20px;
         transition: all .4s ease-in-out;
+        text-align: center;
     }
 
     .userContainer{
         display: none;
     }
 
-    .intro{
+    .intro {
         position: absolute;
-        top: 60%;
+        top: 25%;
         width: 50%;
         text-align: center;
         margin-left: 90px;
-        height: 250px;
-        font-size: 20px;
+        height: 380px;
+        font-size: 25px;
+        left: 15%;
     }
 
     #contactInfo{
@@ -760,7 +824,7 @@
         display: none;
     }
 
-    #mobileMenu{
+    .mobileMenu{
         display: none;
     }
 
@@ -782,7 +846,7 @@
         margin-left: 90px;
         height: 290px;
         font-size: 25px;
-        margin-top: -14%;
+        margin-top: 5%;
     }
 
     #contactInfo{
@@ -793,7 +857,7 @@
 
 
     #menuSection{
-        height: 200vh;
+        height: 115vh;
         padding-top: 10%;
     }
 
@@ -808,7 +872,7 @@
     }
 
     #gallery {
-        height: 150vh;
+        height: 100vh;
         padding-top: 0%;
     }
 
